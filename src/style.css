@@ -1,0 +1,117 @@
+body {
+  background: #082032;
+  font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+.container {
+  margin: 39px 114px;
+  max-width: 900px;
+}
+
+.title {
+  padding-left: 5px;
+}
+
+form {
+  margin: 20px 0;
+}
+
+.col-3 {
+  max-width: 10%;
+}
+.form-control {
+  width: 102%;
+  border-radius: 50px;
+  background: hsla(0, 0%, 100%, 0.2);
+}
+
+.btn-light {
+  background: rgb(255, 76, 41);
+  border-style: none;
+  color: white;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: hsla(0, 0%, 100%, 0.2);
+  color: white;
+}
+h1 {
+  font-size: 24px;
+  line-height: 48px;
+}
+
+.tempt {
+  font-family: "Roboto", sans-serif;
+  font-size: 84px;
+  font-weight: 900;
+  margin: 20px -1px;
+}
+
+.units {
+  color: white;
+  font-size: 21px;
+  display: block;
+  padding: -30px 38px;
+  margin-top: -85px;
+  margin-left: 112px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 48px;
+}
+
+h2.weather-type {
+  margin-top: -18px;
+}
+
+.daily {
+  margin-left: 15px;
+}
+p {
+  font-size: 18px;
+  font-family: PT Mono, monospace;
+  margin: 0;
+}
+
+p#date {
+  margin-top: 35px;
+}
+
+.row {
+  margin-right: -175px;
+}
+.forecast-border {
+  background: rgba(255, 76, 41, 0.8);
+  border-radius: 20px;
+  max-width: 900px;
+  padding: 5px 10px;
+}
+
+.forecast {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 50px 50px;
+}
+.weather-icon {
+  margin-top: 23px;
+  margin-left: 25px;
+  font-size: 190px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 20px;
+  display: block;
+}
+
+.rain-icon {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 10px 5px;
+}
+
+small a {
+  text-decoration: none;
+  color: grey;
+}

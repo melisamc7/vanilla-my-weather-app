@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script
+      src="https://kit.fontawesome.com/b9dd3548ac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="title">The weather app</h3>
+      <form id="search-form">
+        <div class="row">
+          <div class="col-9">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search for a country"
+              autocomplete="off"
+              id="city-search"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              type="submit"
+              value="Go"
+              class="form-control btn btn-light"
+            />
+          </div>
+          <div class="col-3">
+            <button class="form-control btn btn-light" id="current-location">
+              Now
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-5">
+          <div class="clearfix">
+            <i class="fas fa-cloud-sun weather-icon float-left"></i>
+          </div>
+        </div>
+        <div class="col-6">
+          <h1 class="tempt" id="tempt">22</h1>
+          <h1 class="units">
+            <a href="#" id="celsius-link">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a>
+          </h1>
+          <p id="date">Saturday, September 9, 5 pm</p>
+          <h2 id="city">Mexico City</h2>
+          <h2 class="weather-type" id="weather-type">Cloudy</h2>
+          <p>
+            Humidity <span id="humidity">50</span>% <br />
+            Wind <span id="wind">23 </span> km/h
+          </p>
+          <p>max:<span id="max">22</span>° min: <span id="min"> 13</span>°</p>
+        </div>
+      </div>
+      <h2 class="daily">Daily</h2>
+      <div class="forecast-border">
+        <div class="row forecast">
+          <div class="col-2.4">
+            Sunday <br />
+            <i class="fas fa-cloud-sun-rain rain-icon"></i> <br />
+            <strong> 22° </strong>/13°
+          </div>
+          <div class="col-2.4">
+            Monday <br />
+            <i class="fas fa-cloud-sun-rain rain-icon"></i> <br />
+            <strong> 22° </strong>/13°
+          </div>
+          <div class="col-2.4">
+            Tuesday <br />
+            <i class="fas fa-cloud-sun-rain rain-icon"></i> <br />
+            <strong> 22° </strong>/13°
+          </div>
+          <div class="col-2.4">
+            Wednesday <br />
+            <i class="fas fa-cloud-sun-rain rain-icon"></i> <br />
+            <strong> 22° </strong>/13°
+          </div>
+          <div class="col-2.4">
+            Thursday <br />
+            <i class="fas fa-cloud-sun-rain rain-icon"></i> <br />
+            <strong> 22° </strong>/13°
+          </div>
+        </div>
+      </div>
+      <hr />
+      <small
+        >Learn more on
+        <a
+          href="https://weather.com/es-MX/tiempo/hoy/l/16.84,-99.90?par=google"
+        >
+          weather.com</a
+        >
+      </small>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
